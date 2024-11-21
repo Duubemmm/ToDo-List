@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #F0F4FF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #FFFFFF; 
+    margin: auto;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #5E60CE;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E9ECEF;
+}
+span{
+    color:#806a22; 
+}
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    width: 10rem;
+}     
+.todo-container input {
+     flex: 1;
+     border: 1px solid #E9ECEF;
+     border-radius: 8px;
+     padding: 0.5rem;
+     font-size: 1rem;
+     background-color: #E9ECEF;
+     outline: none;
+}      
+.todo-container button {
+     background-color: #5E60CE;
+     color: #FFFFFF;
+     border: none;
+     border-radius: 8px;
+     padding: 0.6rem 1.2rem;
+     font-size: 1rem;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+}      
+.todo-container button:hover {
+     background-color: #6930C3; 
+     transform: translateY(-3px);
+}      
+#task-container {
+    border-radius: 10px;
+    background-color: #E9ECEF;
+    padding: 1rem;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.task-item {
+    background-color: #FFFFFF;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+.task-item:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+.delete-button {
+    background-color: #FF6B6B;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}   
+.delete-button:hover {
+    background-color: #E63946;
+}   
+.clear-button {
+    display: none;
+    margin: 1.5rem auto 0;
+    padding: 0.5rem 1.2rem;
+    background-color: #6930C3;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}   
+.clear-button:hover {
+    background-color: #5E60CE;
+    transform: translateY(-3px);
+}
